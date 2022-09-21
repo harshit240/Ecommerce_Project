@@ -1,105 +1,46 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: prague;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{ 
+    /* Background Color */
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-light-white:#f5f5f5;
+
+    /* Text Color */
+    --primary-font:"Poppins", sans-serif;
+    --text-white:#fff;
+    --text-black:#121212; 
+    --text-danger:#f63440; 
+    --text-gray:#aaa;
+    --text-dark-gray:#777;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    background:var(--bg-white);
+    color: var(--text-black);
+    overflow-x:hidden;
 }
 /*Navbar CSS*/
-.navbar{
-	/*background: #00000063!important;*/
-	background: #00000099;
-	}
-	.navbar-nav li{
-		padding: 0 10px;
-	}
-	.navbar-nav li a{
-		color: white;
-		font-weight: 400;
-		font-size: 20px;
-	}
-	.mob_logo{
-		display: none;
-	}
-	@media(max-width: 768px){
-		.mob_logo{
-			display: block;
-		}
-		.desk_logo{
-			display: none;
-		}
-		.navbar{
-			background:#fec926;
-		}
-		.navbar-nav li{
-			text-align: center;
-		}
-	}
-
+#header .navbar-nav .nav-item .nav-link{
+    color:var(--text-black);
+    padding:0.5rem 1rem;
+    text-align: center;
+}
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link.active{
+    color:var(--bg-danger);
+}
+#header .fixed-top{
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
+}
+#header .navbar-toggler:focus{
+    box-shadow: none;
+}
 /*Navbar CSS END*/
-.a{
-	padding-top: 20px;
-	text-transform: uppercase;
-	font-family: 'prague';
-	letter-spacing: 3px;
-}
-.p1{
-	line-height: 35px;
-	letter-spacing: 1px;
-	word-spacing: 2px;
-	padding-right: 5px;
-	text-align: justify;
-}
-.img{
-	width: 80%;
-}
-#b1{
-	padding: 10px 20px;
-	margin-top: 170px;
-	margin-bottom: 20px;
-}
-.banner{
-	background-image: url(https://www.firstfiddle.in/assets/images/bannerabout.jpg);
-	background-size: cover;
-	width: 100%;
-}
-
-.mt-20{
-	margin-top: 102px;
-	letter-spacing: 3px;
-}
-.know{
-	background: #fbac29;
-	padding: 10px 20px;
-	border: 0;
-	margin-top: 30px;
-    margin-bottom: 70px;
-    letter-spacing: 1px;
-    font-weight: bolder;
-}
-
-
-/*Footer CSS*/
-.social-icons{
-	display: inline-block;
-	font-size: 30px;
-}
-.social-icons a{
-	color: #ffad00;
-}
-.copyright_text{
-	font-size: 13px;
-
-}
-/*Footer CSS*/
-
-#footer_content{
-	padding-left: 32px;
-    padding-right: 32px;
-}
-.foot{
-	width: 100%;
-}
-#para{
-	font-family: prague;
-	word-spacing: 2px;
-	letter-spacing: 2px;
-}
